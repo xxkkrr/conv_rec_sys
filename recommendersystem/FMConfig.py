@@ -1,10 +1,14 @@
+import os
+
+root_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+
 class FMConfig():
     def __init__(self):
         self.use_gpu = False # use gpu or not, choose from [True,False]
-        self.FM_model_path = "/home/kerui_xu/conversational_recommender_system_code/recommendersystem/FM_model_save" # root path of FM model
+        self.FM_model_path = root_path + "/recommendersystem/FM_model_save" # root path of FM model
         self.FM_n = 68864 + 19951 + 189 + 11 + 189 + 4 + 9
         self.FM_k = 2
-        self.data_dir = "/home/kerui_xu/conversational_recommender_system_code/data/FM_data/FM_data_list.json" # path to data
+        self.data_dir = root_path + "/data/FM_data/FM_data_list.json" # path to data
         self.user_num = 68864 # user number
         self.business_num = 19951 # business number
         self.tracker_idx_list = [0, 1, 2, 3, 4] # use tracker idx list
