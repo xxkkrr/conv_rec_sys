@@ -26,9 +26,17 @@ Conversational Recommender System
 
 **<https://arxiv.org/abs/1806.03277>**
 
+## 测试结果
+
+average reward | average turn |  success rate  
+-|-|-
+31.0821 | 3.7336 | 0.9676 
+
 
 ## 生成训练数据（可选）
+当前仓库包含已训练好的模型参数
 
-使用脚本make_data.sh
+如需重新训练，可使用脚本make_data.sh生成数据
 
 在每个模块的子文件夹中，包含各个模块训练使用的代码
+
